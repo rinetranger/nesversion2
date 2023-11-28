@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+.popup-overlay {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  inset: 0;
+}
+
+:root {
+  /* fonts */
+  --font-khmer: Khmer;
+  --font-montserrat: Montserrat;
+  --font-noto-sans-jp: "Noto Sans JP";
+  --font-inherit: inherit;
+  --font-inter: Inter;
+  --font-noto-serif-jp: "Noto Serif JP";
+
+  /* font sizes */
+  --font-size-sm: 14px;
+  --font-size-base: 16px;
+  --font-size-xl: 20px;
+  --font-size-3xs: 10px;
+  --font-size-2xs: 11px;
+  --font-size-xs: 12px;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-black: #000;
+  --color-gainsboro-100: #e5e5e5;
+  --color-gainsboro-200: #ddd;
+  --color-gainsboro-300: #dddcdc;
+  --color-gray-100: #fefeff;
+  --color-gray-200: #8e837d;
+  --color-red: #ff0000;
+  --color-steelblue: #59a2e5;
+  --color-salmon: #fb8474;
+  --color-darkgray: rgba(175, 173, 173, 0.15);
+  --color-whitesmoke: #f0f0f0;
+  --orange: #ee7800;
+
+  /* Border radiuses */
+  --br-7xs: 6px;
+  --br-11xs: 2px;
+}

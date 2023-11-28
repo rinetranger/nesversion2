@@ -1,0 +1,668 @@
+body{
+    width: 100vw !important;
+    margin:0;
+    padding:0;
+    height: auto;
+}
+
+
+
+.menu-icon {
+    margin-top: 14px;
+    /* margin-left: 28px; */
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    opacity: 0.9;
+}
+.frame-child35 {
+    position: absolute;
+    top: 37px;
+    left: 87px;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    object-fit: cover;
+} 
+.frame-child37 {
+    position: absolute;
+    top: 46px;
+    left: 134px;
+    width: 178px;
+    height: 54px;
+    overflow: hidden;
+}
+.header {
+    background-color: #FFFFFF; /* あなたの背景色に */
+    align-items: center;
+    height:108px;
+  }
+  
+  
+  .nesta-resort-kobe1 {
+    font-weight: bold;
+    /* 他のフォントスタイル */
+  }
+ 
+  
+
+ /* カルーセルアイテムのスタイル設定 */
+ /* モバイルデバイス用のスタイル（最大幅が767pxのデバイス）*/
+ @media (max-width: 767px) {
+  .carousel-item {
+    height: 50vh; /* ビューポートの高さの75% */
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    transition: transform 0.5s ease; /* 横スライドのアニメーションを設定 */
+    display: block; /* 画像をブロック要素として表示 */
+    left: 100%; /* 初期位置を右側に設定 */
+  }
+
+  .carousel-item img {
+    height: 100%; /* コンテナの高さに合わせる */
+    width: auto; /* 幅は自動調整 */
+    object-fit: cover; /* 画像をコンテナに収め、はみ出た部分をカット */
+  }
+}
+
+/* タブレット用のスタイル */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .carousel-item {
+    height:75vh; /* ビューポートの高さの75% */
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    transition: transform 0.5s ease; /* 横スライドのアニメーションを設定 */
+    display: block; /* 画像をブロック要素として表示 */
+    left: 100%; /* 初期位置を右側に設定 */
+  }
+
+  .carousel-item img {
+    height: 100%; /* コンテナの高さに合わせる */
+    width: auto; /* 幅は自動調整 */
+    object-fit: cover; /* 画像をコンテナに収め、はみ出た部分をカット */
+  }
+}
+
+/* デスクトップ用のスタイル（画面幅が1025px以上のデバイス）*/
+@media (min-width: 1025px) {
+  .carousel-item {
+    height: 100vh; /* ビューポートの高さの100% */
+    position: relative;
+  width: 100%;
+  overflow: hidden;
+  transition: transform 0.5s ease; /* 横スライドのアニメーションを設定 */
+  display: block; /* 画像をブロック要素として表示 */
+  left: 100%; /* 初期位置を右側に設定 */
+  }
+  .carousel-item img {
+    width: 100%; /* 幅を100%に設定 */
+    height: auto; /* 高さを自動調整（縦横比を保つ） */
+    object-fit: contain; /* 画像をコンテナに収める */
+    object-position: center; /
+  }
+}
+/* .carousel-item {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: calc(100vh - 108px); 
+} */
+
+/* 画像の位置を調整 */
+
+
+/* スマートフォン用の基本スタイル */
+.carousel-caption {
+  font-family: serif;
+  position: absolute;
+  bottom: 20px;
+  left: 40px;
+  color: white;
+  font-size: 20px; /* スマートフォン用のフォントサイズ */
+  text-align: left;
+  text-shadow: 
+    black 1px 1px 10px, black -1px 1px 10px,
+    black 1px -1px 10px, black -1px -1px 10px;
+}
+
+/* タブレット（画面幅が768px以上の場合） */
+@media (min-width: 768px) {
+  .carousel-caption {
+      font-size: 36px; /* タブレット用のフォントサイズ */
+  }
+  .carousel-item {
+    padding-top: 0;
+    height: 50vh; /* ビューポートの高さの50% */
+}
+}
+
+/* PC（画面幅が1024px以上の場合） */
+@media (min-width: 1024px) {
+  .carousel-caption {
+      font-size: 44px; /* PC用のフォントサイズ */
+      bottom: 80px;
+  left: 138px;
+  }
+  .carousel-item {
+    padding-top: 0;
+    height: 80vh; /* ビューポートの高さの80% */
+}
+  
+}
+
+.carousel-item.active {
+  transform: translateX(-100%); /* 中央に配置 */
+}
+
+/* 次のアイテムの位置を調整 */
+.carousel-item-next.carousel-item-left,
+.carousel-item-prev.carousel-item-right {
+  transform: translateX(0); /* 中央に配置 */
+}
+
+/* 前のアイテムの位置を調整 */
+.carousel-item-prev.carousel-item-left,
+.carousel-item-next.carousel-item-right {
+  transform: translateX(-200%); /* 左側に配置 */
+}
+
+  .m1day40-parent {
+    top: 370px;
+    height: 198px;
+    background-image: url(./public/frame-1721@3x.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    text-align: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+
+.m1day40 {
+    font-size: 14px;
+    margin: 46px 20px 20px 20px;
+    padding: auto;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    
+}
+/* タブレット用のスタイル（画面幅が768px以上と1024px以下のデバイス）*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  .m1day40-parent {
+    /* タブレットでのセクションの高さを調整 */
+    height: 50vh; /* 画面の半分の高さ */
+    
+  }
+
+  .m1day40 {
+    font-size: 24px;
+    margin: 46px 20px 20px 20px;
+    padding: auto;
+    
+    display: flex;
+    align-items: center;
+    line-height:54px;
+    
+}
+}
+
+/* デスクトップ用のスタイル（画面幅が1025px以上のデバイス）*/
+@media (min-width: 1025px) {
+  .m1day40-parent {
+    /* デスクトップでのセクションの高さを調整 */
+    height: 75vh; /* 画面の半分の高さ */
+    
+  }
+
+  .m1day40 {
+    font-size: 24px;
+    margin: 120px 120px 120px 120px;
+    padding: auto;
+    line-height: 80px;
+    display: flex;
+    align-items: center;
+    
+    
+    
+}
+}
+
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #FFA500;
+  font-family: Montserrat, sans-serif; }
+
+.subtitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: Montserrat, sans-serif;
+  white-space: pre; }
+  .subtitle:before, .subtitle:after {
+    content: "";
+    border-top: 1px solid #000;
+    width: 30%; }
+  .subtitle:before {
+    margin-right: auto; }
+  .subtitle:after {
+    margin-left: auto; }
+
+.ticket-item-container::-webkit-scrollbar {
+  display: none; }
+
+.ticket-item {
+  width: 160px;
+  min-width: 160px;
+  text-align: center;
+  margin: 0 32px; }
+  .ticket-item .ticket-item-pr {
+    position: relative;
+    color: #8e837d;
+    margin-bottom: 12px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; }
+    .ticket-item .ticket-item-pr span {
+      font-weight: bold;
+      justify-content: center; }
+    .ticket-item .ticket-item-pr .ticket-item-pr-left-bar {
+      position: absolute;
+      left: -24px;
+      width: 25px;
+      bottom: 24px;
+      border-top: 1px solid #8e837d;
+      rotate: 60deg; }
+    .ticket-item .ticket-item-pr .ticket-item-pr-right-bar {
+      position: absolute;
+      right: -24px;
+      width: 25px;
+      bottom: 24px;
+      border-top: 1px solid #8e837d;
+      rotate: 120deg; }
+  .ticket-item .ticket-item-title {
+    background: #8E837D;
+    color: white;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+  .ticket-item .ticket-item-description {
+    background: rgba(175, 173, 173, 0.15);
+    border-bottom: 2px solid #8E837D;
+    font-weight: bold;
+    padding: 2px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    .ticket-item .ticket-item-description span {
+      font-size: 12px; }
+  .ticket-item .ticket-item-space {
+    background: rgba(175, 173, 173, 0.15);
+    height: 24px; }
+  .ticket-item .ticket-item-button {
+    width: 100%; }
+    .ticket-item .ticket-item-button button {
+      width: 100%;
+      border: none;
+      color: white;
+      padding: 12px;
+      background: #FB8474; }
+
+      .ticket-item-container {
+        display: flex;
+        overflow-x: hidden; /* 横スクロールを隠す */
+        scroll-behavior: smooth; /* スムーズなスクロール効果 */
+        justify-content: center;
+      }
+      
+      .ticket-item {
+        flex: 0 0 auto; /* アイテムのサイズを固定 */
+         /* 各アイテムの幅（コンテナの幅に合わせる） */
+      }
+
+
+.parking-fee {
+  display: flex;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: Montserrat, serif;
+  margin-bottom: 24px;
+  margin-left: 32px; }
+  .parking-fee .parking-fee-title {
+    background: #8E837D;
+    padding: 12px 48px;
+    color: white; }
+  .parking-fee .parking-fee-price {
+    padding: 12px 48px;
+    background: rgba(175, 173, 173, 0.15); }
+
+.ticket-warning {
+  padding: 24px 12px;
+  background: rgba(221, 220, 220, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  .ticket-warning .ticket-warning-title {
+    text-align: center;
+    color: #fb8474;
+    padding-bottom: 12px;
+    text-decoration: underline;
+    font-size: 20px; }
+  .ticket-warning .ticket-warning-description {
+    display: flex;
+    flex-direction: column; }
+    .ticket-warning .ticket-warning-description span {
+      font-weight: bold;
+      margin-bottom: 4px; }
+
+.detail-btn {
+  position: relative;
+  background: transparent;
+  border: 1px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: normal;
+  font-family: Montserrat, sans-serif;
+  white-space: pre;
+  width: 600px;
+  height: 40px; }
+  .detail-btn > img {
+    right: 32px;
+    position: absolute;
+    height: 18px; }
+
+.custom-accordion-item {
+  border: none;
+  background: transparent;
+  margin: 0 24px; }
+
+.custom-accordion-button {
+  border: none;
+  padding: 0;
+  background: white;
+  width: 100%; }
+
+.accordion-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 0;
+  background: #FB8474;
+  width: 96px; }
+
+.accordion-text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 48px;
+  font-family: Montserrat, serif;
+  border-top: 1px solid #8e837d;
+  border-right: 1px solid #8e837d;
+  border-bottom: 1px solid #8e837d; }
+  .accordion-text-container span {
+    color: #8e837d;
+    font-size: 18px;
+    font-weight: bold; }
+
+
+
+
+
+#slide{
+  width: 100%;
+  margin-top: 56px;
+  margin-bottom: 56px;
+  height: 75vh;
+}
+#slide2{
+  width: 100%;
+  height: 25vh;
+}
+#slide3{
+  height: 12.5vh;
+}
+#slide4{
+  height: 50vh;
+}
+
+#imgsm1{
+  width: auto; /* 幅を自動調整 */
+  height: auto; /* 高さを固定値に設定 */
+  object-fit: cover; /* 画像をコンテナに合わせてトリミング */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*hmberger*/
+.frame-child38 {
+    position: absolute;
+    top: 55px;
+    left: 53px;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    object-fit: cover;
+  }
+  .nesta-resort-kobe2 {
+    position: absolute;
+    top: 3px;
+    left: 18px;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    width: 240px;
+    height: 31px;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25), 0 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .frame-child40 {
+    position: absolute;
+    top: 26px;
+    left: 21px;
+    width: 59px;
+    height: 18px;
+    overflow: hidden;
+  }
+  .menu-icon1,
+  .nesta-resort-kobe-group {
+    position: absolute;
+    top: 64px;
+    left: 90px;
+ width: 240px;
+    height: 34px;
+    overflow: hidden;
+  }
+  .menu-icon1 {
+    top: 22px;
+    left: 13px;
+    width: 40px;
+    height: 40px;
+    opacity: 0.9;
+  }
+  .japan2 {
+    position: absolute;
+    top: 90px;
+    left: 108px;
+    font-size: var(--font-size-sm);
+    color: var(--color-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 22px;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25), 0 4px 4px rgba(0, 0, 0, 0.25),
+      0 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .frame-child44{
+    width: 100px;
+  }
+  .x-01-icon {
+    margin-top: 12px;
+     /* margin-left: 28px;  */
+    width:40px;
+    height: 40px;
+    overflow: hidden;
+    opacity: 0.9;
+    z-index: 20;
+  }
+
+  .frame-child44 {
+    height: 6.22%;
+    width: 15.01%;
+    top: 1.64%;
+    right: 81.68%;
+    bottom: 92.14%;
+    left: 3.31%;
+    overflow: hidden;
+  }
+  .jp-home {
+    position: absolute;
+    top: 130px;
+    left: 35px;
+    font-size: var(--font-size-2xs);
+    display: flex;
+    font-family: var(--font-inter);
+    color: var(--color-white);
+    align-items: center;
+    justify-content: center;
+    width: 144px;
+    height: 34px;
+  }
+  .frame-child45 {
+    position: absolute;
+    top: 163.5px;
+    left: 34.5px;
+    border-top: 1px solid var(--color-white);
+    box-sizing: border-box;
+    width: 135px;
+    height: 1px;
+  }
+  .frame-root {
+    display:none;
+    z-index: 10;
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url(./public/frame-15822@3x.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    max-width: 100%;
+    max-height: 100%;
+    text-align: center;
+    font-size: var(--font-size-base);
+    color: var(--color-gray-100);
+    font-family: var(--font-khmer);
+  }
+  @media (min-width: 1025px) {
+  .frame-root {
+    z-index:10;
+    display:none;
+    position: absolute;
+    top:0;
+    left:0;
+    width: 30vw;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url(./public/frame-15822@3x.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    max-width: 100%;
+    max-height: 100%;
+    text-align: center;
+    font-size: var(--font-size-base);
+    color: var(--color-gray-100);
+    font-family: var(--font-khmer);
+  }
+  }
+
+
+
+  .image-container {
+    /* Set the height considering equal spacing on top and bottom for each image */
+    height: calc(200px / 2 - 0.5rem); /* Subtract half the gutter margin */
+}
+.image-container img {
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the area without stretching */
+    width: 100%; /* Ensures the image takes the full width of the container */
+}
+
+
+.activity-indicator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    font-size: 16px; /* または必要に応じて調整 */
+    margin-top: 20px;
+}
+.activity-indicator .line {
+    flex: 1;
+    height: 1px;
+    background: #000;
+}
+.activity-indicator .text {
+    padding: 0 10px;
+}
+.text{
+    font-size: 16px;
+    text-align: center;
+    margin:24px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#activity{
+    background-color: var(---color-whitesmoke);
+}
+
+#downloadPdfButton{
+ width:200px;  
+ text-align: center; 
+}
+
+
+
+#osusume{
+background-color: #FB8474;
+font-size: 14px;
+color: white;
+border-radius: 2px;
+padding: 4px 4px 4px 4px;
+position: absolute;
+top:76px;
+left:-22px;
+transform: rotate(-10deg); /* 要素を10度傾ける */
+
+}

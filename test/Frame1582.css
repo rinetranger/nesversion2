@@ -1,0 +1,113 @@
+.frame-child38 {
+  position: absolute;
+  top: 55px;
+  left: 53px;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  object-fit: cover;
+}
+.nesta-resort-kobe2 {
+  position: absolute;
+  top: 3px;
+  left: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 164px;
+  height: 31px;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25), 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.frame-child40 {
+  position: absolute;
+  top: 26px;
+  left: 21px;
+  width: 59px;
+  height: 18px;
+  overflow: hidden;
+}
+.menu-icon1,
+.nesta-resort-kobe-group {
+  position: absolute;
+  top: 64px;
+  left: 90px;
+  width: 178px;
+  height: 34px;
+  overflow: hidden;
+}
+.menu-icon1 {
+  top: 22px;
+  left: 13px;
+  width: 40px;
+  height: 40px;
+  opacity: 0.9;
+}
+.japan2 {
+  position: absolute;
+  top: 90px;
+  left: 108px;
+  font-size: var(--font-size-sm);
+  color: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 22px;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25), 0 4px 4px rgba(0, 0, 0, 0.25),
+    0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.frame-child44,
+.x-01-icon {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  width: 33px;
+  height: 33px;
+}
+.frame-child44 {
+  height: 6.22%;
+  width: 15.01%;
+  top: 1.64%;
+  right: 81.68%;
+  bottom: 92.14%;
+  left: 3.31%;
+  overflow: hidden;
+}
+.jp-home {
+  position: absolute;
+  top: 130px;
+  left: 35px;
+  font-size: var(--font-size-2xs);
+  display: flex;
+  font-family: var(--font-inter);
+  color: var(--color-white);
+  align-items: center;
+  justify-content: center;
+  width: 144px;
+  height: 34px;
+}
+.frame-child45 {
+  position: absolute;
+  top: 163.5px;
+  left: 34.5px;
+  border-top: 1px solid var(--color-white);
+  box-sizing: border-box;
+  width: 135px;
+  height: 1px;
+}
+.frame-root {
+  position: relative;
+  width: 393px;
+  height: 852px;
+  overflow: hidden;
+  background-image: url(./public/frame-15822@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  max-width: 90%;
+  max-height: 90%;
+  text-align: center;
+  font-size: var(--font-size-base);
+  color: var(--color-gray-100);
+  font-family: var(--font-khmer);
+}
