@@ -336,7 +336,7 @@ body{
   display: flex;
   font-size: 14px;
   font-weight: normal;
-  font-family: Montserrat, serif;
+  font-family: Montserrat, sans-serif;
   margin-bottom: 24px;
   margin-left: 32px; }
   .parking-fee .parking-fee-title {
@@ -666,3 +666,174 @@ left:-22px;
 transform: rotate(-10deg); /* 要素を10度傾ける */
 
 }
+
+.logofooter{
+  width: 60px;
+  height: 60px;
+}
+
+
+
+.square{
+  width: 20px;
+  height:20px;
+  background-color: #FB8474;
+}
+
+#timetitle{
+  margin: 20px 29px 20px 20px;
+  background-color: #FB8474;
+  color: white;
+  pointer-events:none;
+}
+
+.m1day999 {
+  font-size: 14px;
+  align-items: center;
+  font-family:serif;
+  
+}
+/* タブレット用のスタイル（画面幅が768px以上と1024px以下のデバイス）*/
+@media (min-width: 768px) and (max-width: 1024px) {
+.m1day999 {
+  font-size: 24px;  
+  line-height:54px;
+}
+}
+
+/* デスクトップ用のスタイル（画面幅が1025px以上のデバイス）*/
+@media (min-width: 1025px) {
+.m1day999 {
+  font-size: 24px;
+  line-height: 80px;
+}
+}
+
+
+.table {
+  /* 必要に応じてテーブルのスタイルを調整 */
+  background-color: #bbbaba!important; /* 画像の背景色に合わせる */
+  
+  
+}
+
+.table th,
+.table td {
+  text-align: center; /* セル内のテキストを中央揃えに */
+  vertical-align: middle; /* セル内のテキストを垂直中央揃えに */
+  border:solid 0.5px #d4d3d3;
+}
+
+.tabletitle{
+  color: white!important;
+  background-color: #8E837D!important;
+  border:solid 0.5px #d4d3d3;
+}
+
+
+/* カードのスタイル */
+
+
+/* カードタイトルのスタイル */
+.card-title {
+  border-bottom: 1px solid #000; /* タイトルの下線 */
+  padding-bottom: .5rem; /* 下線とテキストの間隔 */
+  margin-bottom: 1rem; /* カードタイトルとボタンの間隔 */
+  font-weight: normal;
+}
+
+/* ボタンの共通スタイル */
+.btn {
+  border: none; /* デフォルトのボーダーを無くす */
+  color: #333; /* ボタンのテキスト色 */
+}
+
+/* ボタンのホバースタイル */
+.btn:hover {
+ 
+  background-color: #333; /* ホバー時の背景色 */
+  border-color: #333; /* ホバー時の枠色 */
+}
+
+/* アウトラインボタンのスタイル */
+.btn-outline-secondary {
+  color: #000; /* テキスト色を黒に */
+
+}
+
+/* アウトラインボタンのホバースタイル */
+.btn-outline-secondary:hover {
+  background-color: #000; /* 背景色を黒に */
+}
+
+/* ライトボタンのスタイル */
+.btn-light {
+ 
+  border-color: #ccc; /* 枠色をグレーに */
+}
+
+/* アイコンのスタイル */
+.vector-icon {
+  width: 20px; /* アイコンの幅 */
+  height: auto; /* アイコンの高さを自動調整 */
+  margin-left: .5rem; /* アイコンとテキストの間隔 */
+}
+
+.outlineaa{
+  background-color: #8E837D;
+  border-radius: 2px;
+  
+}
+.googletitle{
+  color: white;
+  text-decoration: none;
+}
+
+.fee-title{
+color:white;
+background-color: #8E837D; 
+height:6vh;
+align-items: center;
+border:solid 0.5px#FFF;
+
+}
+.fee-price{
+  background-color: #e2e0e0;  
+  height:6vh;
+  align-items: center;
+  border:solid 0.5px #FFF;
+}
+
+
+
+.bg-secondary {
+  background-color: #6c757d; /* ヘッダーの背景色 */
+}
+
+.text-white {
+  color: #fff; /* ヘッダーのテキスト色 */
+}
+
+.text-center {
+  text-align: center; /* テキストを中央揃えに */
+}
+
+.py-2 {
+  padding-top: .5rem;
+  padding-bottom: .5rem; /* セルの上下のパディング */
+}
+
+#parktimetitle{
+  background-color:#59a2e5;
+}
+.park-accordion-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 0;
+  background:#59a2e5;
+  width: 96px; }
+
+  .park-timeschedule{
+    font-size: xx-small;
+  }
