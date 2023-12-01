@@ -7,35 +7,61 @@ body{
 
 
 
-.menu-icon {
-    margin-top: 14px;
-    /* margin-left: 28px; */
-    width: 40px;
-    height: 40px;
-    overflow: hidden;
-    opacity: 0.9;
+.headers{
+  display: none;
+  background-color: #FFFFFF; /* 背景色 */
+  align-items: center;
+  height: 108px;
+  justify-content: space-between;
+  padding: 0 15px; /* 余白の調整 */
 }
+
+.headers.active {
+  display: block;
+}
+
+.menu-icon {
+  margin-top: 14px;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  opacity: 0.9;
+}
+
 .frame-child35 {
-    position: absolute;
-    top: 37px;
-    left: 87px;
-    width: 40px;
-    height: 40px;
-    overflow: hidden;
-    object-fit: cover;
-} 
+  position: absolute;
+  top: 37px;
+  left: 87px;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  object-fit: cover;
+}
+
 .frame-child37 {
-    position: absolute;
-    top: 46px;
-    left: 134px;
-    width: 178px;
-    height: 54px;
-    overflow: hidden;
+  position: absolute;
+  top: 46px;
+  left: 134px;
+  width: 178px;
+  height: 54px;
+  overflow: hidden;
+}
+
+.jp-home {
+  font-weight: bold;
+  /* ここでJP Homeのスタイルを定義 */
 }
 .header {
+  position: fixed; /* ヘッダーを固定 */
+  top: 0; /* 上部に配置 */
+  left: 0; /* 左側から始める */
+  width: 100%; /* 幅を画面全体に */
+  z-index: 100; /* 他の要素より上に表示 */
     background-color: #FFFFFF; /* あなたの背景色に */
     align-items: center;
     height:108px;
+    background-color: rgba(255, 255, 255, 1); /* 白色の背景 */
+    transition: background-color 0.3s; /* 背景色の変化を滑らかに */
   }
   
   
@@ -43,14 +69,24 @@ body{
     font-weight: bold;
     /* 他のフォントスタイル */
   }
- 
-  
-
+@media (max-width: 767px) {
+  #topheight{
+    height: 50vh; /* ビューポートの高さの75% */
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  #topheight{
+    height: 75vh; /* ビューポートの高さの75% */
+  }}
+@media (min-width: 1025px) {
+    #topheight{
+      height: 100vh; /* ビューポートの高さの75% */
+}}
  /* カルーセルアイテムのスタイル設定 */
  /* モバイルデバイス用のスタイル（最大幅が767pxのデバイス）*/
  @media (max-width: 767px) {
   .carousel-item {
-    height: 50vh; /* ビューポートの高さの75% */
+    
     position: relative;
     width: 100%;
     overflow: hidden;
@@ -69,7 +105,7 @@ body{
 /* タブレット用のスタイル */
 @media (min-width: 768px) and (max-width: 1024px) {
   .carousel-item {
-    height:75vh; /* ビューポートの高さの75% */
+    
     position: relative;
     width: 100%;
     overflow: hidden;
@@ -88,7 +124,7 @@ body{
 /* デスクトップ用のスタイル（画面幅が1025px以上のデバイス）*/
 @media (min-width: 1025px) {
   .carousel-item {
-    height: 100vh; /* ビューポートの高さの100% */
+  
     position: relative;
   width: 100%;
   overflow: hidden;
@@ -172,9 +208,9 @@ body{
     top: 370px;
     height: 198px;
     background-image: url(./public/frame-1721@3x.png);
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: center;
     text-align: left;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
@@ -182,8 +218,7 @@ body{
 
 .m1day40 {
     font-size: 14px;
-    margin: 46px 20px 20px 20px;
-    padding: auto;
+    padding: 46px 20px 20px 20px;
     line-height: 26px;
     display: flex;
     align-items: center;
@@ -213,20 +248,17 @@ body{
 @media (min-width: 1025px) {
   .m1day40-parent {
     /* デスクトップでのセクションの高さを調整 */
-    height: 75vh; /* 画面の半分の高さ */
+    height: 50vh; /* 画面の半分の高さ */
     
   }
 
   .m1day40 {
     font-size: 24px;
-    margin: 120px 120px 120px 120px;
+    padding: 120px 120px 120px 120px;
     padding: auto;
     line-height: 80px;
     display: flex;
     align-items: center;
-    
-    
-    
 }
 }
 
@@ -241,7 +273,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: normal;
   font-family: Montserrat, sans-serif;
   white-space: pre; }
@@ -254,82 +286,119 @@ body{
   .subtitle:after {
     margin-left: auto; }
 
-.ticket-item-container::-webkit-scrollbar {
-  display: none; }
 
+
+    .ticketdisplay{
+      display: none;
+    }
+    @media (max-width: 768px) {
+      .ticketdisplay {
+        display: flex;
+        justify-content: center; /* 中央揃え */
+        /* その他の必要なスタイル */
+      }
+    }
+/* スクロールバーを非表示にする */
+.ticket-item-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* チケットアイテムコンテナのスタイル */
+.ticket-item-container {
+  display: flex;
+  overflow-x: hidden;
+  will-change: transform;
+ 
+}
+
+/* 各チケットアイテムのスタイル */
 .ticket-item {
   width: 160px;
   min-width: 160px;
   text-align: center;
-  margin: 0 32px; }
-  .ticket-item .ticket-item-pr {
-    position: relative;
-    color: #8e837d;
-    margin-bottom: 12px;
-    height: 72px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column; }
-    .ticket-item .ticket-item-pr span {
-      font-weight: bold;
-      justify-content: center; }
-    .ticket-item .ticket-item-pr .ticket-item-pr-left-bar {
-      position: absolute;
-      left: -24px;
-      width: 25px;
-      bottom: 24px;
-      border-top: 1px solid #8e837d;
-      rotate: 60deg; }
-    .ticket-item .ticket-item-pr .ticket-item-pr-right-bar {
-      position: absolute;
-      right: -24px;
-      width: 25px;
-      bottom: 24px;
-      border-top: 1px solid #8e837d;
-      rotate: 120deg; }
-  .ticket-item .ticket-item-title {
-    background: #8E837D;
-    color: white;
-    height: 64px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; }
-  .ticket-item .ticket-item-description {
-    background: rgba(175, 173, 173, 0.15);
-    border-bottom: 2px solid #8E837D;
-    font-weight: bold;
-    padding: 2px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; }
-    .ticket-item .ticket-item-description span {
-      font-size: 12px; }
-  .ticket-item .ticket-item-space {
-    background: rgba(175, 173, 173, 0.15);
-    height: 24px; }
-  .ticket-item .ticket-item-button {
-    width: 100%; }
-    .ticket-item .ticket-item-button button {
-      width: 100%;
-      border: none;
-      color: white;
-      padding: 12px;
-      background: #FB8474; }
+  margin: 0 32px;
+  flex: 0 0 auto; /* アイテムのサイズを固定 */
+}
 
-      .ticket-item-container {
-        display: flex;
-        overflow-x: hidden; /* 横スクロールを隠す */
-        scroll-behavior: smooth; /* スムーズなスクロール効果 */
-        justify-content: center;
-      }
-      
-      .ticket-item {
-        flex: 0 0 auto; /* アイテムのサイズを固定 */
-         /* 各アイテムの幅（コンテナの幅に合わせる） */
-      }
+/* チケットアイテム内のプロモーション関連スタイル */
+.ticket-item .ticket-item-pr {
+  position: relative;
+  color: #8e837d;
+  margin-bottom: 12px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.ticket-item .ticket-item-pr span {
+  font-weight: bold;
+  justify-content: center;
+}
+
+.ticket-item .ticket-item-pr .ticket-item-pr-left-bar,
+.ticket-item .ticket-item-pr .ticket-item-pr-right-bar {
+  position: absolute;
+  width: 25px;
+  bottom: 24px;
+  border-top: 1px solid #8e837d;
+}
+
+.ticket-item .ticket-item-pr .ticket-item-pr-left-bar {
+  left: -24px;
+  rotate: 60deg;
+}
+
+.ticket-item .ticket-item-pr .ticket-item-pr-right-bar {
+  right: -24px;
+  rotate: 120deg;
+}
+
+/* チケットアイテムのタイトルスタイル */
+.ticket-item .ticket-item-title {
+  background: #8E837D;
+  color: white;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* チケットアイテムの説明スタイル */
+.ticket-item .ticket-item-description {
+  background: rgba(175, 173, 173, 0.15);
+  border-bottom: 2px solid #8E837D;
+  font-weight: bold;
+  padding: 2px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.ticket-item .ticket-item-description span {
+  font-size: 12px;
+}
+
+/* その他のスタイル */
+.ticket-item .ticket-item-space {
+  background: rgba(175, 173, 173, 0.15);
+  height: 24px;
+}
+
+.ticket-item .ticket-item-button {
+  width: 100%;
+}
+
+.ticket-item .ticket-item-button button {
+  width: 100%;
+  border: none;
+  color: white;
+  padding: 12px;
+  background: #FB8474;
+}
 
 
 .parking-fee {
@@ -410,7 +479,7 @@ body{
   align-items: center;
   width: 100%;
   height: 48px;
-  font-family: Montserrat, serif;
+  font-family: Montserrat, sans-serif;
   border-top: 1px solid #8e837d;
   border-right: 1px solid #8e837d;
   border-bottom: 1px solid #8e837d; }
@@ -463,7 +532,7 @@ body{
 
 
 /*hmberger*/
-.frame-child38 {
+/* .frame-child38 {
     position: absolute;
     top: 55px;
     left: 53px;
@@ -471,27 +540,23 @@ body{
     height: 50px;
     overflow: hidden;
     object-fit: cover;
-  }
+  } */
   .nesta-resort-kobe2 {
-    position: absolute;
-    top: 3px;
-    left: 18px;
+    color:white;
     display: flex;
-    align-items: center;
-    /* justify-content: center; */
-    width: 240px;
+    align-items: center; 
+     width: 240px;
     height: 31px;
-    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25), 0 4px 4px rgba(0, 0, 0, 0.25);
   }
-  .frame-child40 {
+  /* .frame-child40 {
     position: absolute;
     top: 26px;
     left: 21px;
     width: 59px;
     height: 18px;
     overflow: hidden;
-  }
-  .menu-icon1,
+  } */
+  /* .menu-icon1,
   .nesta-resort-kobe-group {
     position: absolute;
     top: 64px;
@@ -499,18 +564,16 @@ body{
  width: 240px;
     height: 34px;
     overflow: hidden;
-  }
-  .menu-icon1 {
+  } */
+  /* .menu-icon1 {
     top: 22px;
     left: 13px;
     width: 40px;
     height: 40px;
     opacity: 0.9;
-  }
-  .japan2 {
-    position: absolute;
-    top: 90px;
-    left: 108px;
+  } */
+ .japan2 {
+  color:white;
     font-size: var(--font-size-sm);
     color: var(--color-white);
     display: flex;
@@ -518,23 +581,32 @@ body{
     justify-content: center;
     width: 52px;
     height: 22px;
-    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25), 0 4px 4px rgba(0, 0, 0, 0.25),
-      0 4px 4px rgba(0, 0, 0, 0.25);
   }
-  .frame-child44{
+  .jphome{
+    color:white;
+    font-weight: lighter;
+    font-size: 32px;
+    margin-left: 32px;
+    vertical-align: top;
+    border-bottom: 1px solid #feffff;
+  }
+  .jphomelink{
+    text-decoration: none;
+  }
+  /*.frame-child44{
     width: 100px;
-  }
-  .x-01-icon {
+  } */
+  /* .x-01-icon {
     margin-top: 12px;
-     /* margin-left: 28px;  */
+    
     width:40px;
     height: 40px;
     overflow: hidden;
     opacity: 0.9;
     z-index: 20;
-  }
+  } */
 
-  .frame-child44 {
+  /* .frame-child44 {
     height: 6.22%;
     width: 15.01%;
     top: 1.64%;
@@ -564,18 +636,18 @@ body{
     box-sizing: border-box;
     width: 135px;
     height: 1px;
-  }
-  .frame-root {
+  } */
+  /* .frame-root {
     display:none;
-    z-index: 10;
+    z-index: 1100;
     position: absolute;
-    top:0;
-    left:0;
+  
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    background-image: url(./public/frame-15822@3x.png);
-    background-size: cover;
+    background-color: white; */
+    /* background-image: url(./public/frame-15822@3x.png); */
+    /* background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
     max-width: 100%;
@@ -584,6 +656,9 @@ body{
     font-size: var(--font-size-base);
     color: var(--color-gray-100);
     font-family: var(--font-khmer);
+  } */
+  /* .frame-root.active {
+    display: block;
   }
   @media (min-width: 1025px) {
   .frame-root {
@@ -595,8 +670,9 @@ body{
     width: 30vw;
     height: 100vh;
     overflow: hidden;
-    background-image: url(./public/frame-15822@3x.png);
-    background-size: cover;
+    background-color: white; */
+    /* background-image: url(./public/frame-15822@3x.png); */
+    /* background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
     max-width: 100%;
@@ -606,7 +682,7 @@ body{
     color: var(--color-gray-100);
     font-family: var(--font-khmer);
   }
-  }
+  } */
 
 
 
@@ -661,8 +737,8 @@ color: white;
 border-radius: 2px;
 padding: 4px 4px 4px 4px;
 position: absolute;
-top:76px;
-left:-22px;
+top:78px;
+left:-32px;
 transform: rotate(-10deg); /* 要素を10度傾ける */
 
 }
@@ -837,3 +913,155 @@ border:solid 0.5px#FFF;
   .park-timeschedule{
     font-size: xx-small;
   }
+
+  #carouselimg{
+  max-width: 100%; /* 最大幅をコンテナの幅に合わせる */
+  height: auto; /* 高さを自動調整する */
+  object-fit: cover; /* 画像がコンテナを覆うように調整する */
+  }
+
+  #linedelete{
+    text-decoration: none;
+    color: #000;
+  }
+
+  .responsive-iframe-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9の縦横比 */
+    height: 0;
+    overflow: hidden;
+}
+
+.responsive-iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.openbtn4{
+  position: relative;/*ボタン内側の基点となるためrelativeを指定*/
+  background: #FB8474;
+  cursor: pointer;
+  width: 50px;
+  height:50px;
+  border-radius: 5px;
+  z-index: 10000;
+}
+.in{
+  transform: translateX(100%);
+  width: 100%;
+}
+.in2{
+  transform: translateX(100%);
+  
+  
+}
+
+
+/*ボタン内側*/
+.openbtn4 span{
+    display: inline-block;
+    transition: all .4s;/*アニメーションの設定*/
+    position: absolute;
+    left: 14px;
+    height: 2px;
+    border-radius: 5px;
+    background: #fff;
+    width: 45%;
+  }
+.openbtn4 span:nth-of-type(1) {
+  top:13px; 
+}
+
+.openbtn4 span:nth-of-type(2) {
+  top:19px;
+}
+
+.openbtn4 span:nth-of-type(3) {
+  top:25px;
+}
+
+.openbtn4 span:nth-of-type(3)::after {
+  content:"Menu";/*3つ目の要素のafterにMenu表示を指定*/
+  position: absolute;
+  top:5px;
+  left:-2px;
+  color: #fff;
+  font-size: 0.6rem;
+  text-transform: uppercase;
+}
+
+/*activeクラスが付与されると線が回転して×になり、Menu⇒Closeに変更*/
+
+.openbtn4.active span:nth-of-type(1) {
+    top: 14px;
+    left: 18px;
+    transform: translateY(6px) rotate(-45deg);
+    width: 30%;
+}
+
+.openbtn4.active span:nth-of-type(2) {
+  opacity: 0;
+}
+
+.openbtn4.active span:nth-of-type(3){
+    top: 26px;
+    left: 18px;
+    transform: translateY(-6px) rotate(45deg);
+    width: 30%;
+}
+
+.openbtn4.active span:nth-of-type(3)::after {
+  content:"Close";/*3つ目の要素のafterにClose表示を指定*/
+    transform: translateY(0) rotate(-45deg);
+  top:5px;
+  left:4px;
+}
+
+#humberger-inner{
+position:fixed;
+left:-100%;
+display:flex; 
+z-index: 200;
+background-image: url("./public/frame-15822@3x.png");
+width: 100vw;
+background-size: contain;
+transition: .5s;
+}
+
+.humbergermenu{
+  z-index: 500;
+  position: fixed;
+  top: 32px;
+  left:24px;
+}
+
+
+
+
+@media (min-width: 1025px) {
+  .fee-title{
+    height: 60px;
+  }
+
+  .fee-price{
+    height: 60px;
+  }
+}
+
