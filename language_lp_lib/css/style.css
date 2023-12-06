@@ -105,7 +105,7 @@ body{
 /* タブレット用のスタイル */
 @media (min-width: 768px) and (max-width: 1024px) {
   .carousel-item {
-    
+
     position: relative;
     width: 100%;
     overflow: hidden;
@@ -166,6 +166,9 @@ body{
 /* タブレット（画面幅が768px以上の場合） */
 @media (min-width: 768px) {
   .carousel-caption {
+    position: relative;
+    bottom: 280px;
+  left: 138px;
       font-size: 36px; /* タブレット用のフォントサイズ */
   }
   .carousel-item {
@@ -178,8 +181,8 @@ body{
 @media (min-width: 1024px) {
   .carousel-caption {
       font-size: 44px; /* PC用のフォントサイズ */
-      bottom: 80px;
-  left: 138px;
+      bottom: 300px;
+      left: 138px;
   }
   .carousel-item {
     padding-top: 0;
@@ -207,7 +210,7 @@ body{
   .m1day40-parent {
     top: 370px;
     height: 198px;
-    background-image: url(./public/frame-1721@3x.png);
+    background-image: url(../images/frame-1721@3x.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -585,7 +588,7 @@ body{
   .jphome{
     color:white;
     font-weight: lighter;
-    font-size: 32px;
+    font-size: 24px;
     margin-left: 32px;
     vertical-align: top;
     border-bottom: 1px solid #feffff;
@@ -646,7 +649,7 @@ body{
     height: 100vh;
     overflow: hidden;
     background-color: white; */
-    /* background-image: url(./public/frame-15822@3x.png); */
+    /* background-image: url(./language_lp_lib/frame-15822@3x.png); */
     /* background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
@@ -671,7 +674,7 @@ body{
     height: 100vh;
     overflow: hidden;
     background-color: white; */
-    /* background-image: url(./public/frame-15822@3x.png); */
+    /* background-image: url(./language_lp_lib/frame-15822@3x.png); */
     /* background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
@@ -1039,11 +1042,28 @@ position:fixed;
 left:-100%;
 display:flex; 
 z-index: 200;
-background-image: url("./public/frame-15822@3x.png");
+background-image: url("../images/frame-15822@3x.png");
 width: 100vw;
 background-size: contain;
 transition: .5s;
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #humberger-inner{
+   
+    background: rgba(0, 0, 0, 0.8)!important;
+    }
+  }
+
+@media (min-width: 1025px) {
+  #humberger-inner{
+    
+    background: rgba(0, 0, 0, 0.8)!important;
+    }
+}
+
+
+
 
 .humbergermenu{
   z-index: 500;
@@ -1051,6 +1071,8 @@ transition: .5s;
   top: 32px;
   left:24px;
 }
+
+
 
 
 
@@ -1065,3 +1087,46 @@ transition: .5s;
   }
 }
 
+
+/* #imageCarousel {
+  max-width: 1600px;
+  max-height: 1000px;
+  margin: auto;
+}
+
+#imageCarousel .carousel-inner {
+  height: 100%;
+}
+
+#imageCarousel .carousel-item .d-flex {
+  height: 100%;
+} */
+
+/* #imageCarousel .left-column {
+  width: 40%; 
+  display: flex;
+  flex-direction: column;
+}
+
+#imageCarousel .left-column img {
+  height: 50%; 
+}
+
+#imageCarousel .right-column {
+  width: 60%; 
+  display: flex;
+  flex-direction: column;
+}
+
+#imageCarousel .right-column img:first-child {
+  height: 66.66%; 
+}
+
+#imageCarousel .right-column .d-flex {
+  height: 33.33%; 
+}
+
+#imageCarousel .right-column .d-flex img {
+  height: 100%; 
+}
+ */
