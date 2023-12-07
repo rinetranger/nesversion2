@@ -1,0 +1,94 @@
+.font-change{
+    font-family:'Zen Old Mincho',serif;
+}
+
+.logo-change{
+    width: 80%;
+    padding-left: 72px;
+    height:auto;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .logo-change {
+        width: 40%;
+        padding-left: 120px;
+    }
+    }
+    
+    /* デスクトップ用のスタイル（画面幅が1025px以上のデバイス）*/
+    @media (min-width: 1025px) {
+    .logo-change {
+        width: 28%;
+        height:auto;
+        display: flex;
+        justify-content: left !important;
+        padding-left: 120px;
+    }
+}
+
+.font-color-change{
+    color: #FFA500;
+    font-weight: bold;
+}
+@media (min-width: 1025px) {
+.font-color-change{
+    color: #FFA500;
+    font-weight: bold;
+    font-size: 32px;
+}
+.font-size-change{
+    font-size: 32px;
+}
+}
+
+.ticket-item-pr{
+    line-height: 1rem;
+}
+.ticket-item-title{
+    line-height: 1rem;
+}
+
+.font-small{
+    font-size: 10px;
+    line-height: 0.9rem;
+}
+
+
+
+@media (max-width: 768px){
+.font-smaller{
+    display: block; 
+    font-size: 10px; 
+    transform: scale(1.0); 
+    transform-origin: left top; 
+}
+.line-height-change{
+    line-height: 1rem;
+}
+
+}
+
+
+.footer-logo{
+    width:60%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .footer-logo {
+        width: 40%;
+        padding-left: 120px;
+    }
+    }
+    
+    /* デスクトップ用のスタイル（画面幅が1025px以上のデバイス）*/
+    @media (min-width: 1025px) {
+    .footer-logo {
+        width: 20%;
+        height:auto;
+        display: flex;
+        justify-content: left !important;
+        
+    }
+}

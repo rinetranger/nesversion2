@@ -69,6 +69,9 @@ body{
     font-weight: bold;
     /* 他のフォントスタイル */
   }
+
+  
+
 @media (max-width: 767px) {
   #topheight{
     height: 50vh; /* ビューポートの高さの75% */
@@ -115,8 +118,8 @@ body{
   }
 
   .carousel-item img {
-    height: 100%; /* コンテナの高さに合わせる */
-    width: auto; /* 幅は自動調整 */
+    height: auto; /* コンテナの高さに合わせる */
+    width: 100%; /* 幅は自動調整 */
     object-fit: cover; /* 画像をコンテナに収め、はみ出た部分をカット */
   }
 }
@@ -209,7 +212,7 @@ body{
 
   .m1day40-parent {
     top: 370px;
-    height: 198px;
+    height: 220px;
     background-image: url(../images/frame-1721@3x.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -257,7 +260,7 @@ body{
 
   .m1day40 {
     font-size: 24px;
-    padding: 120px 120px 120px 120px;
+    padding: 56px 120px 56px 120px;
     padding: auto;
     line-height: 80px;
     display: flex;
@@ -446,7 +449,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 18px;
+  font-size: 12px;
   font-weight: normal;
   font-family: Montserrat, sans-serif;
   white-space: pre;
@@ -491,8 +494,19 @@ body{
     font-size: 18px;
     font-weight: bold; }
 
-
-
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .detail-btn {
+        font-size: 20px;
+      }
+      }
+      
+      /* デスクトップ用のスタイル（画面幅が1025px以上のデバイス）*/
+      @media (min-width: 1025px) {
+      .detail-btn {
+        font-size: 20px;
+      }
+      }
+     
 
 
 #slide{
@@ -1088,6 +1102,7 @@ transition: .5s;
 }
 
 
+
 /* #imageCarousel {
   max-width: 1600px;
   max-height: 1000px;
@@ -1095,7 +1110,7 @@ transition: .5s;
 }
 
 #imageCarousel .carousel-inner {
-  height: 100%;
+  height: auto;
 }
 
 #imageCarousel .carousel-item .d-flex {
