@@ -29,3 +29,13 @@
         padding-left: 24px !important;
     }
 }
+
+.sp-br {
+    display: none;
+  }
+  @media screen and (max-width: 768px) {
+    .sp-br {
+      display: block;
+  }
+  
+}
