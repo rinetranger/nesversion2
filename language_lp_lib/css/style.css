@@ -187,7 +187,7 @@ body{
   }
   .carousel-item {
     padding-top: 0;
-    height: 400px; /* ビューポートの高さの80% */
+    height: 600px; /* ビューポートの高さの80% */
 }
   
 }

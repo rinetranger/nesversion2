@@ -17,4 +17,7 @@
 .title-change{
     font-size: 18px;
 }
+.title-small{
+    font-size: 16px !important;
+}
 }
