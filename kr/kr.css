@@ -1,0 +1,31 @@
+
+@media (max-width: 768px){
+    .font-smaller{
+        display: block; 
+        font-size: 10px !important; 
+        transform: scale(1.0); 
+        transform-origin: left top; 
+    }
+    .line-height-change{
+        line-height: 1rem;
+    }
+    .font-small{
+       
+        font-size: 14px !important; 
+        
+    }
+    .font-small2{
+       
+        font-size: 12px !important; 
+        
+    }
+    .font-smaller2{
+        display: block; 
+        font-size: 10px !important; 
+        transform: scale(0.9); 
+        transform-origin: left top; 
+    }
+    .padding-change{
+        padding-left: 24px !important;
+    }
+}

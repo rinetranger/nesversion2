@@ -74,22 +74,21 @@ body{
 
 @media (max-width: 767px) {
   #topheight{
-    height: 50vh; /* ビューポートの高さの75% */
+    height: 400px; /* ビューポートの高さの75% */
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   #topheight{
-    height: 75vh; /* ビューポートの高さの75% */
+    height: 500px; /* ビューポートの高さの75% */
   }}
 @media (min-width: 1025px) {
     #topheight{
-      height: 100vh; /* ビューポートの高さの75% */
+      height: 750px; /* ビューポートの高さの75% */
 }}
  /* カルーセルアイテムのスタイル設定 */
  /* モバイルデバイス用のスタイル（最大幅が767pxのデバイス）*/
  @media (max-width: 767px) {
   .carousel-item {
-    
     position: relative;
     width: 100%;
     overflow: hidden;
@@ -118,8 +117,8 @@ body{
   }
 
   .carousel-item img {
-    height: auto; /* コンテナの高さに合わせる */
-    width: 100%; /* 幅は自動調整 */
+    height: 100%; /* コンテナの高さに合わせる */
+    width: auto; /* 幅は自動調整 */
     object-fit: cover; /* 画像をコンテナに収め、はみ出た部分をカット */
   }
 }
@@ -127,8 +126,7 @@ body{
 /* デスクトップ用のスタイル（画面幅が1025px以上のデバイス）*/
 @media (min-width: 1025px) {
   .carousel-item {
-  
-    position: relative;
+  position: relative;
   width: 100%;
   overflow: hidden;
   transition: transform 0.5s ease; /* 横スライドのアニメーションを設定 */
@@ -176,7 +174,7 @@ body{
   }
   .carousel-item {
     padding-top: 0;
-    height: 50vh; /* ビューポートの高さの50% */
+    height: 500px; /* ビューポートの高さの50% */
 }
 }
 
@@ -189,7 +187,7 @@ body{
   }
   .carousel-item {
     padding-top: 0;
-    height: 80vh; /* ビューポートの高さの80% */
+    height: 400px; /* ビューポートの高さの80% */
 }
   
 }
@@ -212,7 +210,7 @@ body{
 
   .m1day40-parent {
     top: 370px;
-    height: 220px;
+    height: 240px;
     background-image: url(../images/frame-1721@3x.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -234,7 +232,7 @@ body{
 @media (min-width: 768px) and (max-width: 1024px) {
   .m1day40-parent {
     /* タブレットでのセクションの高さを調整 */
-    height: 50vh; /* 画面の半分の高さ */
+    height: 376px;
     
   }
 
@@ -254,7 +252,7 @@ body{
 @media (min-width: 1025px) {
   .m1day40-parent {
     /* デスクトップでのセクションの高さを調整 */
-    height: 50vh; /* 画面の半分の高さ */
+    height: 400px;
     
   }
 

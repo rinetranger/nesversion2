@@ -1,0 +1,20 @@
+
+
+@media (max-width: 768px){
+    .font-smaller{
+        display: block; 
+        font-size: 10px; 
+        transform: scale(1.0); 
+        transform-origin: left top; 
+    
+    }
+    .padding-change{
+        padding-left: 24px !important;
+    }
+    .font-small{
+        font-size: 12px;
+}
+.title-change{
+    font-size: 18px;
+}
+}
