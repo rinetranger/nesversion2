@@ -1,23 +1,8 @@
-body{
-    width: 100vw !important;
-    margin:0;
-    padding:0;
-    height: auto;
-}
-
-
-
-.headers{
-  display: none;
-  background-color: #FFFFFF; /* 背景色 */
-  align-items: center;
-  height: 108px;
-  justify-content: space-between;
-  padding: 0 15px; /* 余白の調整 */
-}
-
-.headers.active {
-  display: block;
+body {
+  width: 100vw !important;
+  margin: 0;
+  padding: 0;
+  height: auto;
 }
 
 .menu-icon {
@@ -28,224 +13,97 @@ body{
   opacity: 0.9;
 }
 
-.frame-child35 {
-  position: absolute;
-  top: 37px;
-  left: 87px;
-  width: 40px;
-  height: 40px;
-  overflow: hidden;
-  object-fit: cover;
-}
-
-.frame-child37 {
-  position: absolute;
-  top: 46px;
-  left: 134px;
-  width: 178px;
-  height: 54px;
-  overflow: hidden;
-}
-
 .jp-home {
   font-weight: bold;
   /* ここでJP Homeのスタイルを定義 */
 }
+
 .header {
-  position: fixed; /* ヘッダーを固定 */
-  top: 0; /* 上部に配置 */
-  left: 0; /* 左側から始める */
-  width: 100%; /* 幅を画面全体に */
-  z-index: 100; /* 他の要素より上に表示 */
-    background-color: #FFFFFF; /* あなたの背景色に */
-    align-items: center;
-    height:108px;
-    background-color: rgba(255, 255, 255, 1); /* 白色の背景 */
-    transition: background-color 0.3s; /* 背景色の変化を滑らかに */
-  }
-  
-  
-  .nesta-resort-kobe1 {
-    font-weight: bold;
-    /* 他のフォントスタイル */
-  }
-
-  
-
-@media (max-width: 767px) {
-  #topheight{
-    height: 400px; /* ビューポートの高さの75% */
-  }
-}
-@media (min-width: 768px) and (max-width: 1024px) {
-  #topheight{
-    height: 500px; /* ビューポートの高さの75% */
-  }}
-@media (min-width: 1025px) {
-    #topheight{
-      height: 750px; /* ビューポートの高さの75% */
-}}
- /* カルーセルアイテムのスタイル設定 */
- /* モバイルデバイス用のスタイル（最大幅が767pxのデバイス）*/
- @media (max-width: 767px) {
-  .carousel-item {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    transition: transform 0.5s ease; /* 横スライドのアニメーションを設定 */
-    display: block; /* 画像をブロック要素として表示 */
-    left: 100%; /* 初期位置を右側に設定 */
-  }
-
-  .carousel-item img {
-    height: 100%; /* コンテナの高さに合わせる */
-    width: auto; /* 幅は自動調整 */
-    object-fit: cover; /* 画像をコンテナに収め、はみ出た部分をカット */
-  }
-}
-
-/* タブレット用のスタイル */
-@media (min-width: 768px) and (max-width: 1024px) {
-  .carousel-item {
-
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    transition: transform 0.5s ease; /* 横スライドのアニメーションを設定 */
-    display: block; /* 画像をブロック要素として表示 */
-    left: 100%; /* 初期位置を右側に設定 */
-  }
-
-  .carousel-item img {
-    height: 100%; /* コンテナの高さに合わせる */
-    width: auto; /* 幅は自動調整 */
-    object-fit: cover; /* 画像をコンテナに収め、はみ出た部分をカット */
-  }
-}
-
-/* デスクトップ用のスタイル（画面幅が1025px以上のデバイス）*/
-@media (min-width: 1025px) {
-  .carousel-item {
-  position: relative;
+  position: fixed;
+  /* ヘッダーを固定 */
+  top: 0;
+  /* 上部に配置 */
+  left: 0;
+  /* 左側から始める */
   width: 100%;
-  overflow: hidden;
-  transition: transform 0.5s ease; /* 横スライドのアニメーションを設定 */
-  display: block; /* 画像をブロック要素として表示 */
-  left: 100%; /* 初期位置を右側に設定 */
-  }
-  .carousel-item img {
-    width: 100%; /* 幅を100%に設定 */
-    height: auto; /* 高さを自動調整（縦横比を保つ） */
-    object-fit: contain; /* 画像をコンテナに収める */
-    object-position: center; /
-  }
+  /* 幅を画面全体に */
+  z-index: 100;
+  /* 他の要素より上に表示 */
+  background-color: transparent;
+  /* あなたの背景色に */
+  align-items: center;
+  height: 108px;
+  transition: background-color 0.3s;
+  /* 背景色の変化を滑らかに */
 }
-/* .carousel-item {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-  height: calc(100vh - 108px); 
-} */
 
-/* 画像の位置を調整 */
+.nesta-resort-kobe1 {
+  font-weight: bold;
+  /* 他のフォントスタイル */
+}
 
+.top-carousel {
+  margin-top: 108px;
+}
 
 /* スマートフォン用の基本スタイル */
 .carousel-caption {
   font-family: serif;
   position: absolute;
-  bottom: 20px;
+  bottom: 0px;
   left: 40px;
   color: white;
-  font-size: 20px; /* スマートフォン用のフォントサイズ */
+  font-size: 20px;
+  /* スマートフォン用のフォントサイズ */
   text-align: left;
-  text-shadow: 
+  text-shadow:
     black 1px 1px 10px, black -1px 1px 10px,
     black 1px -1px 10px, black -1px -1px 10px;
 }
 
-/* タブレット（画面幅が768px以上の場合） */
-@media (min-width: 768px) {
-  .carousel-caption {
-    position: relative;
-    bottom: 280px;
-  left: 138px;
-      font-size: 36px; /* タブレット用のフォントサイズ */
-  }
-  .carousel-item {
-    padding-top: 0;
-    height: 500px; /* ビューポートの高さの50% */
-}
+.carousel-item {
 }
 
-/* PC（画面幅が1024px以上の場合） */
-@media (min-width: 1024px) {
-  .carousel-caption {
-      font-size: 44px; /* PC用のフォントサイズ */
-      bottom: 300px;
-      left: 138px;
-  }
-  .carousel-item {
-    padding-top: 0;
-    height: 600px; /* ビューポートの高さの80% */
-}
-  
+.carousel-item-image {
+  width: 100%;
 }
 
-.carousel-item.active {
-  transform: translateX(-100%); /* 中央に配置 */
+.m1day40-parent {
+  top: 370px;
+  background-image: url(../images/frame-1721@3x.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: left;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
-/* 次のアイテムの位置を調整 */
-.carousel-item-next.carousel-item-left,
-.carousel-item-prev.carousel-item-right {
-  transform: translateX(0); /* 中央に配置 */
-}
-
-/* 前のアイテムの位置を調整 */
-.carousel-item-prev.carousel-item-left,
-.carousel-item-next.carousel-item-right {
-  transform: translateX(-200%); /* 左側に配置 */
-}
-
-  .m1day40-parent {
-    top: 370px;
-    height: 240px;
-    background-image: url(../images/frame-1721@3x.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    text-align: left;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  }
-
 
 .m1day40 {
-    font-size: 14px;
-    padding: 46px 20px 20px 20px;
-    line-height: 26px;
-    display: flex;
-    align-items: center;
-    
+  font-size: 14px;
+  padding: 46px 20px 20px 20px;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
 }
+
 /* タブレット用のスタイル（画面幅が768px以上と1024px以下のデバイス）*/
 @media (min-width: 768px) and (max-width: 1024px) {
   .m1day40-parent {
     /* タブレットでのセクションの高さを調整 */
     height: 376px;
-    
+
   }
 
   .m1day40 {
     font-size: 24px;
     margin: 46px 20px 20px 20px;
     padding: auto;
-    
+
     display: flex;
     align-items: center;
-    line-height:54px;
-    
-}
+    line-height: 54px;
+
+  }
 }
 
 /* デスクトップ用のスタイル（画面幅が1025px以上のデバイス）*/
@@ -253,7 +111,6 @@ body{
   .m1day40-parent {
     /* デスクトップでのセクションの高さを調整 */
     height: 400px;
-    
   }
 
   .m1day40 {
@@ -263,15 +120,15 @@ body{
     line-height: 80px;
     display: flex;
     align-items: center;
+  }
 }
-}
-
 
 .title {
   font-size: 20px;
   font-weight: bold;
   color: #FFA500;
-  font-family: Montserrat, sans-serif; }
+  font-family: Montserrat, sans-serif;
+}
 
 .subtitle {
   display: flex;
@@ -280,28 +137,39 @@ body{
   font-size: 18px;
   font-weight: normal;
   font-family: Montserrat, sans-serif;
-  white-space: pre; }
-  .subtitle:before, .subtitle:after {
-    content: "";
-    border-top: 1px solid #000;
-    width: 30%; }
-  .subtitle:before {
-    margin-right: auto; }
-  .subtitle:after {
-    margin-left: auto; }
+  white-space: pre;
+}
+
+.subtitle:before,
+.subtitle:after {
+  content: "";
+  border-top: 1px solid #000;
+  width: 30%;
+}
+
+.subtitle:before {
+  margin-right: auto;
+}
+
+.subtitle:after {
+  margin-left: auto;
+}
 
 
 
-    .ticketdisplay{
-      display: none;
-    }
-    @media (max-width: 768px) {
-      .ticketdisplay {
-        display: flex;
-        justify-content: center; /* 中央揃え */
-        /* その他の必要なスタイル */
-      }
-    }
+.ticketdisplay {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .ticketdisplay {
+    display: flex;
+    justify-content: center;
+    /* 中央揃え */
+    /* その他の必要なスタイル */
+  }
+}
+
 /* スクロールバーを非表示にする */
 .ticket-item-container::-webkit-scrollbar {
   display: none;
@@ -312,7 +180,7 @@ body{
   display: flex;
   overflow-x: hidden;
   will-change: transform;
- 
+
 }
 
 /* 各チケットアイテムのスタイル */
@@ -321,7 +189,8 @@ body{
   min-width: 160px;
   text-align: center;
   margin: 0 32px;
-  flex: 0 0 auto; /* アイテムのサイズを固定 */
+  flex: 0 0 auto;
+  /* アイテムのサイズを固定 */
 }
 
 /* チケットアイテム内のプロモーション関連スタイル */
@@ -404,21 +273,25 @@ body{
   background: #FB8474;
 }
 
-
 .parking-fee {
   display: flex;
   font-size: 14px;
   font-weight: normal;
   font-family: Montserrat, sans-serif;
   margin-bottom: 24px;
-  margin-left: 32px; }
-  .parking-fee .parking-fee-title {
-    background: #8E837D;
-    padding: 12px 48px;
-    color: white; }
-  .parking-fee .parking-fee-price {
-    padding: 12px 48px;
-    background: rgba(175, 173, 173, 0.15); }
+  margin-left: 32px;
+}
+
+.parking-fee .parking-fee-title {
+  background: #8E837D;
+  padding: 12px 48px;
+  color: white;
+}
+
+.parking-fee .parking-fee-price {
+  padding: 12px 48px;
+  background: rgba(175, 173, 173, 0.15);
+}
 
 .ticket-warning {
   padding: 24px 12px;
@@ -426,19 +299,26 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column; }
-  .ticket-warning .ticket-warning-title {
-    text-align: center;
-    color: #fb8474;
-    padding-bottom: 12px;
-    text-decoration: underline;
-    font-size: 20px; }
-  .ticket-warning .ticket-warning-description {
-    display: flex;
-    flex-direction: column; }
-    .ticket-warning .ticket-warning-description span {
-      font-weight: bold;
-      margin-bottom: 4px; }
+  flex-direction: column;
+}
+
+.ticket-warning .ticket-warning-title {
+  text-align: center;
+  color: #fb8474;
+  padding-bottom: 12px;
+  text-decoration: underline;
+  font-size: 20px;
+}
+
+.ticket-warning .ticket-warning-description {
+  display: flex;
+  flex-direction: column;
+}
+
+.ticket-warning .ticket-warning-description span {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
 
 .detail-btn {
   position: relative;
@@ -452,22 +332,27 @@ body{
   font-family: Montserrat, sans-serif;
   white-space: pre;
   width: 600px;
-  height: 40px; }
-  .detail-btn > img {
-    right: 32px;
-    position: absolute;
-    height: 18px; }
+  height: 40px;
+}
+
+.detail-btn>img {
+  right: 32px;
+  position: absolute;
+  height: 18px;
+}
 
 .custom-accordion-item {
   border: none;
   background: transparent;
-  margin: 0 24px; }
+  margin: 0 12px;
+}
 
 .custom-accordion-button {
   border: none;
   padding: 0;
   background: white;
-  width: 100%; }
+  width: 100%;
+}
 
 .accordion-image-container {
   display: flex;
@@ -475,7 +360,8 @@ body{
   align-items: center;
   padding: 12px 0;
   background: #FB8474;
-  width: 96px; }
+  width: 96px;
+}
 
 .accordion-text-container {
   display: flex;
@@ -486,48 +372,57 @@ body{
   font-family: Montserrat, sans-serif;
   border-top: 1px solid #8e837d;
   border-right: 1px solid #8e837d;
-  border-bottom: 1px solid #8e837d; }
-  .accordion-text-container span {
-    color: #8e837d;
-    font-size: 18px;
-    font-weight: bold; }
+  border-bottom: 1px solid #8e837d;
+}
 
-    @media (min-width: 768px) and (max-width: 1024px) {
-      .detail-btn {
-        font-size: 20px;
-      }
-      }
-      
-      /* デスクトップ用のスタイル（画面幅が1025px以上のデバイス）*/
-      @media (min-width: 1025px) {
-      .detail-btn {
-        font-size: 20px;
-      }
-      }
-     
+.accordion-text-container span {
+  color: #8e837d;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .detail-btn {
+    font-size: 20px;
+  }
+}
+
+/* デスクトップ用のスタイル（画面幅が1025px以上のデバイス）*/
+@media (min-width: 1025px) {
+  .detail-btn {
+    font-size: 20px;
+  }
+}
 
 
-#slide{
+
+#slide {
   width: 100%;
   margin-top: 56px;
   margin-bottom: 56px;
   height: 75vh;
 }
-#slide2{
+
+#slide2 {
   width: 100%;
   height: 25vh;
 }
-#slide3{
+
+#slide3 {
   height: 12.5vh;
 }
-#slide4{
+
+#slide4 {
   height: 50vh;
 }
 
-#imgsm1{
-  width: auto; /* 幅を自動調整 */
-  height: auto; /* 高さを固定値に設定 */
-  object-fit: cover; /* 画像をコンテナに合わせてトリミング */
+#imgsm1 {
+  width: auto;
+  /* 幅を自動調整 */
+  height: auto;
+  /* 高さを固定値に設定 */
+  object-fit: cover;
+  /* 画像をコンテナに合わせてトリミング */
 }
 
 
@@ -556,14 +451,15 @@ body{
     overflow: hidden;
     object-fit: cover;
   } */
-  .nesta-resort-kobe2 {
-    color:white;
-    display: flex;
-    align-items: center; 
-     width: 240px;
-    height: 31px;
-  }
-  /* .frame-child40 {
+.nesta-resort-kobe2 {
+  color: white;
+  display: flex;
+  align-items: center;
+  width: 240px;
+  height: 31px;
+}
+
+/* .frame-child40 {
     position: absolute;
     top: 26px;
     left: 21px;
@@ -571,7 +467,7 @@ body{
     height: 18px;
     overflow: hidden;
   } */
-  /* .menu-icon1,
+/* .menu-icon1,
   .nesta-resort-kobe-group {
     position: absolute;
     top: 64px;
@@ -580,38 +476,41 @@ body{
     height: 34px;
     overflow: hidden;
   } */
-  /* .menu-icon1 {
+/* .menu-icon1 {
     top: 22px;
     left: 13px;
     width: 40px;
     height: 40px;
     opacity: 0.9;
   } */
- .japan2 {
-  color:white;
-    font-size: var(--font-size-sm);
-    color: var(--color-white);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 52px;
-    height: 22px;
-  }
-  .jphome{
-    color:white;
-    font-weight: lighter;
-    font-size: 24px;
-    margin-left: 32px;
-    vertical-align: top;
-    border-bottom: 1px solid #feffff;
-  }
-  .jphomelink{
-    text-decoration: none;
-  }
-  /*.frame-child44{
+.japan2 {
+  color: white;
+  font-size: var(--font-size-sm);
+  color: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 22px;
+}
+
+.jphome {
+  color: white;
+  font-weight: lighter;
+  font-size: 24px;
+  margin-left: 32px;
+  vertical-align: top;
+  border-bottom: 1px solid #feffff;
+}
+
+.jphomelink {
+  text-decoration: none;
+}
+
+/*.frame-child44{
     width: 100px;
   } */
-  /* .x-01-icon {
+/* .x-01-icon {
     margin-top: 12px;
     
     width:40px;
@@ -621,7 +520,7 @@ body{
     z-index: 20;
   } */
 
-  /* .frame-child44 {
+/* .frame-child44 {
     height: 6.22%;
     width: 15.01%;
     top: 1.64%;
@@ -652,7 +551,7 @@ body{
     width: 135px;
     height: 1px;
   } */
-  /* .frame-root {
+/* .frame-root {
     display:none;
     z-index: 1100;
     position: absolute;
@@ -661,8 +560,8 @@ body{
     height: 100vh;
     overflow: hidden;
     background-color: white; */
-    /* background-image: url(./language_lp_lib/frame-15822@3x.png); */
-    /* background-size: cover;
+/* background-image: url(./language_lp_lib/frame-15822@3x.png); */
+/* background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
     max-width: 100%;
@@ -672,7 +571,7 @@ body{
     color: var(--color-gray-100);
     font-family: var(--font-khmer);
   } */
-  /* .frame-root.active {
+/* .frame-root.active {
     display: block;
   }
   @media (min-width: 1025px) {
@@ -686,8 +585,8 @@ body{
     height: 100vh;
     overflow: hidden;
     background-color: white; */
-    /* background-image: url(./language_lp_lib/frame-15822@3x.png); */
-    /* background-size: cover;
+/* background-image: url(./language_lp_lib/frame-15822@3x.png); */
+/* background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
     max-width: 100%;
@@ -701,124 +600,138 @@ body{
 
 
 
-  .image-container {
-    /* Set the height considering equal spacing on top and bottom for each image */
-    height: calc(200px / 2 - 0.5rem); /* Subtract half the gutter margin */
+.image-container {
+  /* Set the height considering equal spacing on top and bottom for each image */
+  height: calc(200px / 2 - 0.5rem);
+  /* Subtract half the gutter margin */
 }
+
 .image-container img {
-    height: 100%;
-    object-fit: cover; /* Ensures the image covers the area without stretching */
-    width: 100%; /* Ensures the image takes the full width of the container */
+  height: 100%;
+  object-fit: cover;
+  /* Ensures the image covers the area without stretching */
+  width: 100%;
+  /* Ensures the image takes the full width of the container */
 }
 
 
 .activity-indicator {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5px;
-    font-size: 16px; /* または必要に応じて調整 */
-    margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  font-size: 16px;
+  /* または必要に応じて調整 */
+  margin-top: 20px;
 }
+
 .activity-indicator .line {
-    flex: 1;
-    height: 1px;
-    background: #000;
+  flex: 1;
+  height: 1px;
+  background: #000;
 }
+
 .activity-indicator .text {
-    padding: 0 10px;
-}
-.text{
-    font-size: 16px;
-    text-align: center;
-    margin:24px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-#activity{
-    background-color: var(---color-whitesmoke);
+  padding: 0 10px;
 }
 
-#downloadPdfButton{
- width:200px;  
- text-align: center; 
+.text {
+  font-size: 16px;
+  text-align: center;
+  margin: 24px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#activity {
+  background-color: var(---color-whitesmoke);
+}
+
+#downloadPdfButton {
+  width: 200px;
+  text-align: center;
 }
 
 
 
-#osusume{
-background-color: #FB8474;
-font-size: 14px;
-color: white;
-border-radius: 2px;
-padding: 4px 4px 4px 4px;
-position: absolute;
-top:78px;
-left:-32px;
-transform: rotate(-10deg); /* 要素を10度傾ける */
+#osusume {
+  background-color: #FB8474;
+  font-size: 14px;
+  color: white;
+  border-radius: 2px;
+  padding: 4px 4px 4px 4px;
+  position: absolute;
+  top: 78px;
+  left: -32px;
+  transform: rotate(-10deg);
+  /* 要素を10度傾ける */
 
 }
 
-.logofooter{
+.logofooter {
   width: 60px;
   height: 60px;
 }
 
 
 
-.square{
+.square {
   width: 20px;
-  height:20px;
+  height: 20px;
   background-color: #FB8474;
 }
 
-#timetitle{
-  margin: 20px 29px 20px 20px;
+#timetitle {
+  margin: 20px 0;
   background-color: #FB8474;
   color: white;
-  pointer-events:none;
+  pointer-events: none;
 }
 
 .m1day999 {
   font-size: 14px;
   align-items: center;
-  font-family:serif;
-  
+  font-family: serif;
+
 }
+
 /* タブレット用のスタイル（画面幅が768px以上と1024px以下のデバイス）*/
 @media (min-width: 768px) and (max-width: 1024px) {
-.m1day999 {
-  font-size: 24px;  
-  line-height:54px;
-}
+  .m1day999 {
+    font-size: 24px;
+    line-height: 54px;
+  }
 }
 
 /* デスクトップ用のスタイル（画面幅が1025px以上のデバイス）*/
 @media (min-width: 1025px) {
-.m1day999 {
-  font-size: 24px;
-  line-height: 80px;
-}
+  .m1day999 {
+    font-size: 24px;
+    line-height: 80px;
+  }
 }
 
 
 .table {
   /* 必要に応じてテーブルのスタイルを調整 */
-  background-color: #bbbaba!important; /* 画像の背景色に合わせる */
-  
-  
+  background-color: #bbbaba !important;
+  /* 画像の背景色に合わせる */
+
+
 }
 
 .table th,
 .table td {
-  text-align: center; /* セル内のテキストを中央揃えに */
-  vertical-align: middle; /* セル内のテキストを垂直中央揃えに */
-  border:solid 0.5px #d4d3d3;
+  text-align: center;
+  /* セル内のテキストを中央揃えに */
+  vertical-align: middle;
+  /* セル内のテキストを垂直中央揃えに */
+  border: solid 0.5px #d4d3d3;
 }
 
-.tabletitle{
-  color: white!important;
-  background-color: #8E837D!important;
-  border:solid 0.5px #d4d3d3;
+.tabletitle {
+  color: white !important;
+  background-color: #8E837D !important;
+  border: solid 0.5px #d4d3d3;
 }
 
 
@@ -827,196 +740,201 @@ transform: rotate(-10deg); /* 要素を10度傾ける */
 
 /* カードタイトルのスタイル */
 .card-title {
-  border-bottom: 1px solid #000; /* タイトルの下線 */
-  padding-bottom: .5rem; /* 下線とテキストの間隔 */
-  margin-bottom: 1rem; /* カードタイトルとボタンの間隔 */
+  border-bottom: 1px solid #000;
+  /* タイトルの下線 */
+  padding-bottom: .5rem;
+  /* 下線とテキストの間隔 */
+  margin-bottom: 1rem;
+  /* カードタイトルとボタンの間隔 */
   font-weight: normal;
 }
 
 /* ボタンの共通スタイル */
 .btn {
-  border: none; /* デフォルトのボーダーを無くす */
-  color: #333; /* ボタンのテキスト色 */
+  border: none;
+  /* デフォルトのボーダーを無くす */
+  color: #333;
+  /* ボタンのテキスト色 */
 }
 
 /* ボタンのホバースタイル */
 .btn:hover {
- 
-  background-color: #333; /* ホバー時の背景色 */
-  border-color: #333; /* ホバー時の枠色 */
+
+  background-color: #333;
+  /* ホバー時の背景色 */
+  border-color: #333;
+  /* ホバー時の枠色 */
 }
 
 /* アウトラインボタンのスタイル */
 .btn-outline-secondary {
-  color: #000; /* テキスト色を黒に */
+  color: #000;
+  /* テキスト色を黒に */
 
 }
 
 /* アウトラインボタンのホバースタイル */
 .btn-outline-secondary:hover {
-  background-color: #000; /* 背景色を黒に */
+  background-color: #000;
+  /* 背景色を黒に */
 }
 
 /* ライトボタンのスタイル */
 .btn-light {
- 
-  border-color: #ccc; /* 枠色をグレーに */
+
+  border-color: #ccc;
+  /* 枠色をグレーに */
 }
 
 /* アイコンのスタイル */
 .vector-icon {
-  width: 20px; /* アイコンの幅 */
-  height: auto; /* アイコンの高さを自動調整 */
-  margin-left: .5rem; /* アイコンとテキストの間隔 */
+  width: 20px;
+  /* アイコンの幅 */
+  height: auto;
+  /* アイコンの高さを自動調整 */
+  margin-left: .5rem;
+  /* アイコンとテキストの間隔 */
 }
 
-.outlineaa{
+.outlineaa {
   background-color: #8E837D;
   border-radius: 2px;
-  
+
 }
-.googletitle{
+
+.googletitle {
   color: white;
   text-decoration: none;
 }
 
-.fee-title{
-color:white;
-background-color: #8E837D; 
-height:6vh;
-align-items: center;
-border:solid 0.5px#FFF;
+.fee-title {
+  color: white;
+  background-color: #8E837D;
+  height: 6vh;
+  align-items: center;
+  border: solid 0.5px#FFF;
 
 }
-.fee-price{
-  background-color: #e2e0e0;  
-  height:6vh;
+
+.fee-price {
+  background-color: #e2e0e0;
+  height: 6vh;
   align-items: center;
-  border:solid 0.5px #FFF;
+  border: solid 0.5px #FFF;
 }
 
 
 
 .bg-secondary {
-  background-color: #6c757d; /* ヘッダーの背景色 */
+  background-color: #6c757d;
+  /* ヘッダーの背景色 */
 }
 
 .text-white {
-  color: #fff; /* ヘッダーのテキスト色 */
+  color: #fff;
+  /* ヘッダーのテキスト色 */
 }
 
 .text-center {
-  text-align: center; /* テキストを中央揃えに */
+  text-align: center;
+  /* テキストを中央揃えに */
 }
 
 .py-2 {
   padding-top: .5rem;
-  padding-bottom: .5rem; /* セルの上下のパディング */
+  padding-bottom: .5rem;
+  /* セルの上下のパディング */
 }
 
-#parktimetitle{
-  background-color:#59a2e5;
+#parktimetitle {
+  background-color: #59a2e5;
 }
+
 .park-accordion-image-container {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 12px 0;
-  background:#59a2e5;
-  width: 96px; }
+  background: #59a2e5;
+  width: 96px;
+}
 
-  .park-timeschedule{
-    font-size: xx-small;
-  }
+.park-timeschedule {
+  font-size: xx-small;
+}
 
-  #carouselimg{
-  max-width: 100%; /* 最大幅をコンテナの幅に合わせる */
-  height: auto; /* 高さを自動調整する */
-  object-fit: cover; /* 画像がコンテナを覆うように調整する */
-  }
+#carouselimg {
+  max-width: 100%;
+  /* 最大幅をコンテナの幅に合わせる */
+  height: auto;
+  /* 高さを自動調整する */
+  object-fit: cover;
+  /* 画像がコンテナを覆うように調整する */
+}
 
-  #linedelete{
-    text-decoration: none;
-    color: #000;
-  }
+#linedelete {
+  text-decoration: none;
+  color: #000;
+}
 
-  .responsive-iframe-container {
-    position: relative;
-    padding-bottom: 56.25%; /* 16:9の縦横比 */
-    height: 0;
-    overflow: hidden;
+.responsive-iframe-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9の縦横比 */
+  height: 0;
+  overflow: hidden;
 }
 
 .responsive-iframe-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.openbtn4{
-  position: relative;/*ボタン内側の基点となるためrelativeを指定*/
+.openbtn4 {
+  position: relative;
+  /*ボタン内側の基点となるためrelativeを指定*/
   background: #FB8474;
   cursor: pointer;
   width: 50px;
-  height:50px;
+  height: 50px;
   border-radius: 5px;
   z-index: 10000;
 }
-.in{
-  transform: translateX(100%);
-  width: 100%;
-}
-.in2{
-  transform: translateX(100%);
-  
-  
-}
-
 
 /*ボタン内側*/
-.openbtn4 span{
-    display: inline-block;
-    transition: all .4s;/*アニメーションの設定*/
-    position: absolute;
-    left: 14px;
-    height: 2px;
-    border-radius: 5px;
-    background: #fff;
-    width: 45%;
-  }
+.openbtn4 span {
+  display: inline-block;
+  transition: all .4s;
+  /*アニメーションの設定*/
+  position: absolute;
+  left: 14px;
+  height: 2px;
+  border-radius: 5px;
+  background: #fff;
+  width: 45%;
+}
+
 .openbtn4 span:nth-of-type(1) {
-  top:13px; 
+  top: 13px;
 }
 
 .openbtn4 span:nth-of-type(2) {
-  top:19px;
+  top: 19px;
 }
 
 .openbtn4 span:nth-of-type(3) {
-  top:25px;
+  top: 25px;
 }
 
 .openbtn4 span:nth-of-type(3)::after {
-  content:"Menu";/*3つ目の要素のafterにMenu表示を指定*/
+  content: "Menu";
+  /*3つ目の要素のafterにMenu表示を指定*/
   position: absolute;
-  top:5px;
-  left:-2px;
+  top: 5px;
+  left: -2px;
   color: #fff;
   font-size: 0.6rem;
   text-transform: uppercase;
@@ -1025,76 +943,120 @@ border:solid 0.5px#FFF;
 /*activeクラスが付与されると線が回転して×になり、Menu⇒Closeに変更*/
 
 .openbtn4.active span:nth-of-type(1) {
-    top: 14px;
-    left: 18px;
-    transform: translateY(6px) rotate(-45deg);
-    width: 30%;
+  top: 14px;
+  left: 18px;
+  transform: translateY(6px) rotate(-45deg);
+  width: 30%;
 }
 
 .openbtn4.active span:nth-of-type(2) {
   opacity: 0;
 }
 
-.openbtn4.active span:nth-of-type(3){
-    top: 26px;
-    left: 18px;
-    transform: translateY(-6px) rotate(45deg);
-    width: 30%;
+.openbtn4.active span:nth-of-type(3) {
+  top: 26px;
+  left: 18px;
+  transform: translateY(-6px) rotate(45deg);
+  width: 30%;
 }
 
 .openbtn4.active span:nth-of-type(3)::after {
-  content:"Close";/*3つ目の要素のafterにClose表示を指定*/
-    transform: translateY(0) rotate(-45deg);
-  top:5px;
-  left:4px;
+  content: "Close";
+  /*3つ目の要素のafterにClose表示を指定*/
+  transform: translateY(0) rotate(-45deg);
+  top: 5px;
+  left: 4px;
 }
 
-#humberger-inner{
-position:fixed;
-left:-100%;
-display:flex; 
-z-index: 200;
-background-image: url("../images/frame-15822@3x.png");
-width: 100vw;
-background-size: contain;
-transition: .5s;
+#humberger-inner {
+  position: fixed;
+  left: -100%;
+  display: flex;
+  z-index: 100;
+  width: 100vw;
+  background-size: contain;
+  transition: .5s;
+  background: transparent;
+}
+
+.in {
+  transform: translateX(100%);
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8) !important;
+}
+
+.frame-child34 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  z-index: 101;
+}
+
+.frame-child35 {
+  position: absolute;
+  top: 37px;
+  left: 87px;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  object-fit: cover;
+  z-index: 102;
+}
+
+.frame-child37 {
+  position: absolute;
+  top: 46px;
+  left: 134px;
+  width: 178px;
+  height: 54px;
+  overflow: hidden;
+  z-index: 103;
+}
+
+.frame-child38 {
+  position: absolute;
+  top: 124px;
+  left: 64px;
+  overflow: hidden;
+  z-index: 103;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  #humberger-inner{
-   
-    background: rgba(0, 0, 0, 0.8)!important;
-    }
+  #humberger-inner {
+    width: 100vw;
+    height: 100vh;
   }
 
-@media (min-width: 1025px) {
-  #humberger-inner{
-    
-    background: rgba(0, 0, 0, 0.8)!important;
-    }
+  .frame-child34 {
+    display: none;
+  }
 }
 
+@media (min-width: 1025px) {
+  #humberger-inner {
+    width: 100vw;
+    height: 100vh;
+  }
 
+  .frame-child34 {
+    display: none;
+  }
+}
 
-
-.humbergermenu{
+.humbergermenu {
   z-index: 500;
   position: fixed;
   top: 32px;
-  left:24px;
+  left: 24px;
 }
 
-
-
-
-
-
 @media (min-width: 1025px) {
-  .fee-title{
+  .fee-title {
     height: 60px;
   }
 
-  .fee-price{
+  .fee-price {
     height: 60px;
   }
 }
