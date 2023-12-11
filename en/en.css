@@ -3,25 +3,25 @@
 }
 
 .logo-change{
-    width: 90%;
-    padding-left: 72px;
+    width: 100%;
+    padding-left: 0;
     height:auto;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
     .logo-change {
-        width: 50%;
-        padding-left: 120px;
+        width:380px;
+        padding-left: 0px;
     }
     }
     
     /* デスクトップ用のスタイル（画面幅が1025px以上のデバイス）*/
     @media (min-width: 1025px) {
     .logo-change {
-        width: 32%;
+        width:380px;
         height:auto;
         display: flex;
         justify-content: left !important;
-        padding-left: 120px;
+        padding-left: 0;
     }
 }
 

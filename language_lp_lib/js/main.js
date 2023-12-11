@@ -1,12 +1,10 @@
 /*js-1 ハンバーガーメニュ開く閉じる */
 var trigger = document.querySelector('.openbtn4');
 const humbergerinner = document.getElementById("humberger-inner");
-
 function hamburger() {
   trigger.classList.toggle('active');
   humbergerinner.classList.toggle('in'); // モバイル用のクラス
 }
-
 trigger.addEventListener('click', function() {
   hamburger();
 });
@@ -20,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const position = secondItem.offsetLeft;
     const halfWidth = secondItem.offsetWidth / 2;
     ticketItemContainer.scrollLeft = position - (window.innerWidth / 2) + halfWidth;
-    console.log("testdd")
+    
   }
 });
 
@@ -28,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function() {
 document.addEventListener("DOMContentLoaded", function() {
   const carouselElement = document.getElementById('imageCarousel');
   const carouselInner = carouselElement.querySelector('.carousel-inner');
-  const transitionDelay = 200; // 0.2秒の遅延
+  const transitionDelay = 300; // 0.2秒の遅延
   let intervalId = null; // インターバルIDを保持するための変数
 
   function fadeImagesSequentially(carouselItem) {

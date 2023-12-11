@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
   height: auto;
+
 }
 
 .menu-icon {
@@ -35,6 +36,7 @@ body {
   height: 108px;
   transition: background-color 0.3s;
   /* 背景色の変化を滑らかに */
+
 }
 
 .nesta-resort-kobe1 {
@@ -44,6 +46,43 @@ body {
 
 .top-carousel {
   margin-top: 108px;
+
+}
+
+
+
+.carousel-item-image {
+  width: 100%;
+  
+}
+.c-1{
+display: none;
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .c-1 {
+    display: inherit;
+
+  }
+
+.c-2{
+display: none;
+}
+}
+
+/* デスクトップ用のスタイル（画面幅が1025px以上のデバイス）*/
+@media (min-width: 1025px) {
+  .c-1 {
+   
+   
+    display: inherit;
+  }
+
+.c-2{
+  display: none;
+}
 }
 
 /* スマートフォン用の基本スタイル */
@@ -53,7 +92,8 @@ body {
   bottom: 0px;
   left: 40px;
   color: white;
-  font-size: 20px;
+  font-size: 24px;
+  line-height: 2.2rem;
   /* スマートフォン用のフォントサイズ */
   text-align: left;
   text-shadow:
@@ -61,13 +101,44 @@ body {
     black 1px -1px 10px, black -1px -1px 10px;
 }
 
-.carousel-item {
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .carousel-caption {
+    font-family: serif;
+    position: absolute;
+    bottom: 80px;
+    left: 100px;
+    color: white;
+    font-size: 28px;
+    line-height: 3rem;
+    /* スマートフォン用のフォントサイズ */
+    text-align: left;
+    text-shadow:
+      black 1px 1px 10px, black -1px 1px 10px,
+      black 1px -1px 10px, black -1px -1px 10px;
+  }
+
+
 }
 
-.carousel-item-image {
-  width: 100%;
+/* デスクトップ用のスタイル（画面幅が1025px以上のデバイス）*/
+@media (min-width: 1024px) {
+  .carousel-caption {
+    font-family: serif;
+    position: absolute;
+    bottom: 100px;
+    left: 140px;
+    line-height: 4rem;
+    color: white;
+    font-size: 42px;
+    /* スマートフォン用のフォントサイズ */
+    text-align: left;
+    text-shadow:
+      black 1px 1px 10px, black -1px 1px 10px,
+      black 1px -1px 10px, black -1px -1px 10px;
+  }
 }
-
 .m1day40-parent {
   top: 370px;
   background-image: url(../images/frame-1721@3x.png);
@@ -332,8 +403,42 @@ body {
   font-family: Montserrat, sans-serif;
   white-space: pre;
   width: 600px;
-  height: 40px;
+  height: 60px;
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .detail-btn {
+    position: relative;
+    background: transparent;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: normal;
+    font-family: Montserrat, sans-serif;
+    white-space: pre;
+    width: 600px;
+    height: 60px;
+  }
+}
+
+/* デスクトップ用のスタイル（画面幅が1025px以上のデバイス）*/
+@media (min-width: 1025px) {
+  .detail-btn {
+    position: relative;
+    background: transparent;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: normal;
+    font-family: Montserrat, sans-serif;
+    white-space: pre;
+    width: 600px;
+    height: 60px;
+  }}
 
 .detail-btn>img {
   right: 32px;
@@ -894,14 +999,15 @@ body {
 }
 
 .openbtn4 {
-  position: relative;
+  
+  position:fixed;
   /*ボタン内側の基点となるためrelativeを指定*/
   background: #FB8474;
   cursor: pointer;
   width: 50px;
   height: 50px;
   border-radius: 5px;
-  z-index: 10000;
+  z-index: 1000;
 }
 
 /*ボタン内側*/
@@ -916,6 +1022,7 @@ body {
   background: #fff;
   width: 45%;
 }
+
 
 .openbtn4 span:nth-of-type(1) {
   top: 13px;
@@ -970,9 +1077,10 @@ body {
 
 #humberger-inner {
   position: fixed;
+  top:0;
   left: -100%;
   display: flex;
-  z-index: 100;
+  z-index: 200;
   width: 100vw;
   background-size: contain;
   transition: .5s;
@@ -1014,6 +1122,17 @@ body {
   z-index: 103;
 }
 
+
+.frame-child39 {
+  position: absolute;
+  top: 46px;
+  left:88px;
+  width: 178px;
+  height: 54px;
+  overflow: hidden;
+  z-index: 103;
+}
+
 .frame-child38 {
   position: absolute;
   top: 124px;
@@ -1045,7 +1164,7 @@ body {
 }
 
 .humbergermenu {
-  z-index: 500;
+  z-index:100;
   position: fixed;
   top: 32px;
   left: 24px;
@@ -1063,45 +1182,11 @@ body {
 
 
 
-/* #imageCarousel {
-  max-width: 1600px;
-  max-height: 1000px;
-  margin: auto;
+.accordion-body {
+  padding-left: 0;
+  padding-right: 0;
 }
 
-#imageCarousel .carousel-inner {
-  height: auto;
+.custom-accordion-item .accordion-collapse {
+  transition: height 0.5s ease; /* 高さの変化にアニメーションを適用 */
 }
-
-#imageCarousel .carousel-item .d-flex {
-  height: 100%;
-} */
-
-/* #imageCarousel .left-column {
-  width: 40%; 
-  display: flex;
-  flex-direction: column;
-}
-
-#imageCarousel .left-column img {
-  height: 50%; 
-}
-
-#imageCarousel .right-column {
-  width: 60%; 
-  display: flex;
-  flex-direction: column;
-}
-
-#imageCarousel .right-column img:first-child {
-  height: 66.66%; 
-}
-
-#imageCarousel .right-column .d-flex {
-  height: 33.33%; 
-}
-
-#imageCarousel .right-column .d-flex img {
-  height: 100%; 
-}
- */
