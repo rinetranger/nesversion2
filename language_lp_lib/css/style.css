@@ -28,7 +28,7 @@ body {
   /* 左側から始める */
   width: 100%;
   /* 幅を画面全体に */
-  z-index: 100;
+  z-index: 98;
   /* 他の要素より上に表示 */
   background-color: transparent;
   /* あなたの背景色に */
@@ -1080,7 +1080,7 @@ display: none;
   top:0;
   left: -100%;
   display: flex;
-  z-index: 200;
+  z-index: 99;
   width: 100vw;
   background-size: contain;
   transition: .5s;
@@ -1098,7 +1098,7 @@ display: none;
   left: 0;
   top: 0;
   width: 100vw;
-  z-index: 101;
+  z-index: 55;
 }
 
 .frame-child35 {
@@ -1109,7 +1109,7 @@ display: none;
   height: 40px;
   overflow: hidden;
   object-fit: cover;
-  z-index: 102;
+  z-index: 55;
 }
 
 .frame-child37 {
@@ -1119,7 +1119,16 @@ display: none;
   width: 178px;
   height: 54px;
   overflow: hidden;
-  z-index: 103;
+  z-index: 55;
+}
+.frame-child34.active{
+  display:none;
+}
+.frame-child35.active{
+  display:none;
+}
+.frame-child37.active{
+  display:none;
 }
 
 
@@ -1130,7 +1139,10 @@ display: none;
   width: 178px;
   height: 54px;
   overflow: hidden;
-  z-index: 103;
+  z-index: 30;
+}
+.frame-child39.active{
+  display:none;
 }
 
 .frame-child38 {
@@ -1164,7 +1176,7 @@ display: none;
 }
 
 .humbergermenu {
-  z-index:100;
+  z-index:1000;
   position: fixed;
   top: 32px;
   left: 24px;
@@ -1189,4 +1201,18 @@ display: none;
 
 .custom-accordion-item .accordion-collapse {
   transition: height 0.5s ease; /* 高さの変化にアニメーションを適用 */
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .font-smaller{
+    font-size: 12px;
+  }
+}
+
+/* デスクトップ用のスタイル（画面幅が1025px以上のデバイス）*/
+@media (min-width: 1025px) {
+   .font-smaller{
+    font-size: 12px;
+  }
 }

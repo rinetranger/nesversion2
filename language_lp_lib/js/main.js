@@ -1,9 +1,18 @@
 /*js-1 ハンバーガーメニュ開く閉じる */
-var trigger = document.querySelector('.openbtn4');
+var trigger = document.querySelector('.openbtn4');  
 const humbergerinner = document.getElementById("humberger-inner");
+const titleimg = document.querySelector(".frame-child39");
+const titleimg2 = document.querySelector(".frame-child34");
+const titleimg3 = document.querySelector(".frame-child35");
+const titleimg4 = document.querySelector(".frame-child37");
 function hamburger() {
+  
   trigger.classList.toggle('active');
   humbergerinner.classList.toggle('in'); // モバイル用のクラス
+
+  if (titleimg) {
+    titleimg.classList.toggle('active');
+}
 }
 trigger.addEventListener('click', function() {
   hamburger();
