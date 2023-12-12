@@ -69,3 +69,7 @@ document.addEventListener("DOMContentLoaded", function() {
   // 自動スライドを停止
   bootstrap.Carousel.getInstance(carouselElement).pause();
 });
+
+
+
+
